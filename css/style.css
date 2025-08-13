@@ -1,0 +1,495 @@
+body {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #0B1D26;
+    color: #fff;
+    font-weight: 700;
+
+}
+
+.container {
+
+    width: 100%;
+    max-width: 1920px;
+    margin-inline: auto;
+    position: relative;
+    min-height: 1900px;
+    z-index: 3;
+
+}
+
+.logo {
+
+    font-family: 'Playfair';
+    font-size: 32px;
+    color: #fff;
+
+}
+
+.container::after {
+    
+    content: "";
+    background: linear-gradient(330deg, rgba(11,29,38,0) 31.06%, #0B1D26 108.93%);
+    position: absolute; inset: 0;
+    z-index: 1;
+    pointer-events:none;
+
+}
+
+ .overlay-bottom::after {  
+
+    content: "";
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0.00) 0%, #0B1D26 61.38%);
+    position: absolute; 
+    width: 100%;
+    max-width: 1920px;
+    top: 1220px;
+    height: 700px;
+    z-index: 4;
+    pointer-events:none;
+
+}
+
+.header {
+
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 65px;
+    min-height: 25px;
+    max-width: 1760px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+}
+
+.main-nav {
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.nav-item a {
+
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+
+}
+
+.nav-item:hover a {
+
+    color: #FBD784;
+
+}
+
+
+.account {
+
+    display: flex;
+    color: #fff;
+    gap: 8px;
+    align-items: center;
+    transition: 0.3s;
+    font-size: 17px;
+
+}
+
+.account:hover {
+
+    color: #FBD784;
+
+}
+
+.account svg path {
+
+    transition: 0.3s;
+
+}
+
+.account:hover svg path {
+
+    fill: #FBD784;
+
+}
+
+.bg {
+
+    position: absolute;
+    pointer-events: none; user-select: none;
+    z-index: 1;
+
+}
+
+.bg-2 { 
+    
+    z-index:2; 
+
+}
+
+.bg-3 {
+
+    z-index: 3;
+
+}
+
+
+.bg-photo {
+
+     left:0; 
+     right:0; 
+
+}
+
+.bg-photo>img {
+
+    width: 100%; height: 100%;
+    object-position: center bottom;
+    display: block;
+    
+}
+
+
+.img-2 {
+
+    width: 100%; height: 100%;
+    object-position: center top;
+    display: block;
+    margin-top: 500px;
+    min-height:1422px;
+
+}
+
+.img-3 {
+
+    width: 100%;
+    object-position: center;
+    max-width: 1920px;
+    margin-top: 800px;
+    min-height: 926px; 
+
+}
+
+
+
+.hero {
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    min-height: 708px;
+    
+}
+
+.hero-content {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 950px;
+    gap: 32px;
+
+}
+
+
+.line {
+
+    color: #FBD784;
+    padding-left: 104px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    position: relative;
+
+}
+
+.line::after {
+
+    content: "";
+    width: 72px;
+    height: 2px;
+    background: #FBD784;
+    top: 50%;
+    left: 0;
+    position: absolute;
+
+}
+
+h1 {
+
+    font-family: 'Playfair';
+    font-size: 88px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 100px;
+    text-transform: capitalize;
+
+}
+
+.hero-content a {
+    
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 16px;
+    transition: 0.3s;
+
+}
+
+.hero-content a:hover {
+
+    color: #FBD784;
+
+}
+
+.hero-content>a svg path {
+
+    transition: 0.3s;
+
+}
+
+.hero-content a:hover svg path {
+
+    fill: #FBD784;
+
+}
+
+.container-2 {
+
+    display: flex;
+    justify-content: center;
+    margin-inline: auto;
+    background: #0B1D26;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    z-index: 5;
+
+}
+
+.steps {
+    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1462px;
+    margin-top: -400px ;
+    gap: 200px;
+}
+
+.step {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.text{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 61%;
+    gap: 27px;
+    padding: 140px;
+    position: relative;
+    z-index: 7;
+
+}
+
+.text p , .text-2 p {
+
+    line-height: 32px;
+    font-weight: 500;
+
+}
+
+.text a , .text-2 a {
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #FBD784;
+    transition: 0.3s;
+
+}
+
+.text a:hover , .text-2 a:hover  {
+
+    color: #fff;
+
+}
+
+.text>a svg path ,.text-2>a svg path {
+
+    transition:  0.3s;
+
+}
+
+.text a:hover svg path , .text-2 a:hover svg path {
+
+    fill: #fff;
+
+}
+
+h2 {
+
+    font-weight: 500;
+    font-family: 'Playfair';
+    font-size: 64px;
+    line-height: 1;
+
+
+}
+
+.photo {
+
+    width: 39%;
+}
+
+.photo img {
+
+    width: 100%;
+    height: 100%;
+    max-height: 720px;
+    object-fit: cover;
+
+}
+
+.number {
+
+    position: absolute;
+    z-index: 6;
+    opacity: 0.1;
+    font-size: 240px;
+    top: 0;
+    left: 0;
+    line-height: 300px;
+    font-weight: 500;
+
+}
+
+.text-2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 61%;
+    gap: 27px;
+    padding: 141px 0px 141px 241px;
+    position: relative;
+    z-index: 7;
+
+}
+
+.two {
+
+    margin-left: 100px;
+}
+
+
+
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 200px;
+
+}
+
+.footer-logo {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 303px;
+    gap: 24px;
+
+
+}
+
+.footer-text {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+
+}
+
+.terms {
+    
+    display: flex;
+    font-weight: 500;
+    line-height: 32px;
+    font-size: 14px;
+    opacity: 0.5;
+
+}
+
+.terms a {
+
+    color: #FBD784;
+    
+}
+
+.footer-nav {
+
+    display: flex;
+    gap: 210px;
+
+}
+
+.footer-list {
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+.footer-list p {
+
+    font-size: 24px;
+    line-height: 32px;
+    color: #FBD784;
+
+}
+
+.footer-list ul {
+
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 16px;
+    
+}
+
+.footer-list>ul>li a {
+
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    transition: 0.3s;
+
+}
+
+.footer-list>ul>li:hover a {
+
+    color: #FBD784;
+
+}
+
